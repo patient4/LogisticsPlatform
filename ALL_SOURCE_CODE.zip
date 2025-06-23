@@ -1,0 +1,75 @@
+# EverFlown Logistics - Complete Source Code
+
+This is the complete freight brokerage platform built with React, Express.js, and PostgreSQL.
+
+## Quick Start
+
+```bash
+# Install dependencies
+npm install
+
+# Set environment variables
+DATABASE_URL=your_postgresql_url
+SESSION_SECRET=your_session_secret
+REPL_ID=your_repl_id
+
+# Initialize database
+npm run db:push
+
+# Start development
+npm run dev
+```
+
+## Project Structure
+
+```
+everflown-logistics/
+├── client/src/
+│   ├── components/
+│   ├── hooks/
+│   ├── lib/
+│   ├── pages/
+│   └── App.tsx
+├── server/
+│   ├── db.ts
+│   ├── index.ts
+│   ├── routes.ts
+│   ├── storage.ts
+│   └── replitAuth.ts
+├── shared/
+│   └── schema.ts
+└── package.json
+```
+
+## Core Features
+
+- Authentication with Replit Auth
+- Dashboard with real-time KPIs
+- Lead management and conversion
+- Customer database
+- Carrier network management
+- Order processing workflow
+- Dispatch operations
+- Invoice management
+- Follow-up task system
+- Manual shipment tracing
+
+## Database Schema
+
+Complete PostgreSQL schema with:
+- Users & Sessions (Auth)
+- Leads, Customers, Carriers (Core entities)
+- Orders, Dispatches (Operations)
+- Quotes, Invoices (Financial)
+- Follow-ups (Task management)
+
+All tables have proper relations and constraints for data integrity.
+
+## Technology Stack
+
+**Frontend:** React 18, TypeScript, Tailwind CSS, Shadcn/UI, TanStack Query
+**Backend:** Node.js, Express.js, TypeScript, Drizzle ORM
+**Database:** PostgreSQL with Neon serverless
+**Auth:** Passport.js with OpenID Connect
+
+This is a production-ready freight brokerage platform ready for deployment.
